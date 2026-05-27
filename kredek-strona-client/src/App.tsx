@@ -12,7 +12,7 @@ function App() {
         {/* Navbar */}
         <nav className='navbar'>
           <div className="nav-logo">
-            <img height={64} src={Logo} alt="logo" />
+            <img height={64} src={Logo} alt="logo"/>
           </div>
           <div className="nav-links">
             <Link to="/">Home</Link>
