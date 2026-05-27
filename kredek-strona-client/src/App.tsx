@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router';
 import Home from './views/Home/Home';
-import OurCourses from './views/OurCourses';
+import OurCourses from './views/OurCourses/OurCourses';
 import CoursantsProjects from './views/CoursantsProjects';
-import AboutUs from './views/AboutUs';
+import AboutUs from './views/AboutUs/AboutUs';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 
