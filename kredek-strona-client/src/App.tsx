@@ -4,6 +4,7 @@ import OurCourses from './views/OurCourses';
 import CoursantsProjects from './views/CoursantsProjects';
 import AboutUs from './views/AboutUs';
 import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/projekty" element={<CoursantsProjects />} />
           <Route path="/about" element={<AboutUs />} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
 
   )
