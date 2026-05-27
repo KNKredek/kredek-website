@@ -1,10 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router';
-import Home from './views/Home';
+import Home from './views/Home/Home';
 import OurCourses from './views/OurCourses';
 import CoursantsProjects from './views/CoursantsProjects';
 import AboutUs from './views/AboutUs';
 import Navbar from './components/Navbar/Navbar';
-import './styles/App.css';
 
 function App() {
   return (
