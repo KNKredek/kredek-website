@@ -1,0 +1,26 @@
+:root {
+    --primary: #ff5e57;
+    --secondary: #2E2458;
+    --background: white;
+    --foreground: black;
+    --navbar: #382E61;
+    --footer: #111827;
+    
+    font: 18px/145% system-ui, 'Segoe UI', Roboto, sans-serif;
+    letter-spacing: 0.18px;
+    color-scheme: light dark;
+    color: var(--foreground);
+    background: var(--background);
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    @media (max-width: 1024px) {
+        font-size: 16px;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+}
