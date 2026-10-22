@@ -13,6 +13,6 @@ export default function Home() {
             <CoursesSection/>
             <ProjectsSection/>
             <CtaSection/>
-    </div>
+        </div>
     )
 }

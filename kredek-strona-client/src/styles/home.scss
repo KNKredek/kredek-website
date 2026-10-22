@@ -2,6 +2,7 @@
   font-family: 'Inter', sans-serif;
   color: #212529;
   background-color: #ffffff;
+  background-color: var(--secondary);
 }
 
 // MAIN SECTION
@@ -14,10 +15,13 @@
     justify-content: center;
     align-items: center;
     gap: 32px;
+    height: 800px;
     position: relative;
     overflow: hidden;
+    color: var(--black);
     .heroContent {
         max-width: 500px;
+        z-index: 2;
         h1 {
             font-size: 64px;
             margin: 20px 0;
@@ -29,7 +33,6 @@
             border-bottom: 3px solid #f25757;
         }
         p {
-            color: #e9ecef;
             font-size: 24px;
             line-height: 1.2;
             margin-bottom: 30px;
@@ -47,6 +50,9 @@
             display: flex;
             gap: 15px;
         }
+    }
+    .heroMockup{
+        z-index: 2;
     }
     img {
         width: 100%;
@@ -66,7 +72,7 @@
             display: block;
             transform: translate3d(0, 0, 0);
             .wavePath {
-                fill: #ffffff;
+                fill: var(--secondary);;
             }
             .waveBack {
                 opacity: 0.4;
