@@ -4,7 +4,7 @@ export default function HeroSection() {
     return (
         <section className="hero">
             <AnimatedBackground/>
-            {/* <div className="heroContent">
+            <div className="heroContent">
                 <span className="badge">Nowy kurs C# .NET startuje wkrótce</span>
                 <h1>Koduj swoją przyszłość z <span className="highlight">kredek</span></h1>
                 <p>Klub programistyczny stworzony przez studentów dla studentów. Uczymy się, tworzymy projekty i dzielimy wiedzą.</p>
@@ -28,7 +28,7 @@ export default function HeroSection() {
                     d="M0,100 C360,50 360,150 720,100 C1080,50 1080,150 1440,100 L1440,200 L0,200 Z"
                     />
                 </svg>
-            </div> */}
+            </div>
 
         </section>
     )
