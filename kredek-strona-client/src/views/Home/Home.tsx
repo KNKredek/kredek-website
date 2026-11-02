@@ -1,4 +1,4 @@
-import '../../styles/home.scss';
+import './home.scss';
 import CoursesSection from './Sections/CoursesSection';
 import CtaSection from './Sections/CtaSection';
 import HeroSection from './Sections/HeroSection';

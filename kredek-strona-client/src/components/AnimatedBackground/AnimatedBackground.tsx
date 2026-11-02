@@ -33,33 +33,29 @@ function isInViewBox(x: number, y: number): boolean{
 
 
 const colorArray: string[] = [
-    "#EE204D59", // czerwony (red)
-    "#FCE88359", // żółty (yellow)
-    "#1F75FE59", // niebieski (blue)
-    "#B4674D59", // brązowy (brown)
-    "#FF753859", // pomarańczowy (orange)
-    "#1CAC7859", // zielony (green)
-    "#926EAE59", // fioletowy (violet)
-    "#23232359", // czarny (black)
-    "#FFAACC59", // różowy (carnation pink)
-    "#C5E38459", // żółtozielony (yellow-green)
-    "#0D98BA59", // niebiesko-zielony (blue-green)
-    "#FF534959", // czerwono-pomarańczowy (red-orange)
-    "#C0448F59", // czerwono-fioletowy (red-violet)
-    "#FFB65359", // żółto-pomarańczowy (yellow-orange)
-    "#7366BD59", // niebiesko-fioletowy (blue-violet)
+    "#EE204D59",
+    "#FCE88359", 
+    "#1F75FE59", 
+    "#B4674D59", 
+    "#FF753859", 
+    "#1CAC7859", 
+    "#926EAE59", 
+    "#23232359",
+    "#FFAACC59", 
+    "#C5E38459", 
+    "#0D98BA59", 
+    "#FF534959", 
+    "#C0448F59", 
+    "#FFB65359", 
+    "#7366BD59", 
 ]
-// const functionsArray: ((x:number) => number)[] = [
-//     (x) => -(Math.pow((x-200),2)/900) + 500,
-//     (x) => ( * 10 - 5) * x,
-// ]
 
 const functionArrayFun = () => {
     const random = Math.random();
     const random2 = Math.random();
     const array: ((x:number) => number)[] = [
-        //(x) => -(Math.pow((x-200),2)/(random * 100 + 900)) + (random2 * 2400 - 1200),
-        (x) => (random * 1 - 0.5) * x + (random2 * 500) + 600 + Math.sin(x / (random2 * 100 + 50)) * 100,
+        (x) => -(Math.pow((x-200),2)/(random * 100 + 900)) + (random2 * 2400 - 1200),
+        (x) => (random * 1 - 0.5) * x + (random2 * 1500) + Math.sin(x / (random2 * 100 + 50)) * 100,
     ]
     return array;
 }
@@ -80,7 +76,7 @@ class Stroke {
     duration: number = 1000;
     initialTime: number;
     color: string;
-    fx: (x: number) => number = functionArrayFun()[Math.floor(Math.random() * functionArrayFun().length)];//functionsArray[Math.floor(Math.random() * colorArray.length)];
+    fx: (x: number) => number = functionArrayFun()[Math.floor(Math.random() * functionArrayFun().length)];
     finishedDt: number = 0;
     drawEveryDt: number = this.duration / 600;
     isFlipped: boolean = Math.random() < 1;
@@ -89,7 +85,7 @@ class Stroke {
     
     constructor(colorId:number){
         this.initialTime = Date.now();
-        this.color = colorArray[colorId];//colorArray[Math.floor(Math.random() * colorArray.length)];
+        this.color = colorArray[colorId];
     }
 
     draw(ctx: CanvasRenderingContext2D){
@@ -169,7 +165,7 @@ const AnimatedBackground = () => {
                     for(let i = 0; i < strokes.length; i++){
                         strokes[i].draw(ctx);
                     }
-                    if(strokes.length < 16 && Math.random() < 0.1){
+                    if(strokes.length < 16 && Math.random() < 0.01){
                         strokes.push(new Stroke(i));
                         i++;
                     }
