@@ -1,16 +1,17 @@
 :root {
     --primary: #ff5e57;
-    --secondary: #2E2458;
-    --background: white;
+    --primary-purple: #2E2458;
+    --white: white;
     --foreground: black;
     --navbar: #382E61;
     --footer: #111827;
+    --light-gray: #f2f2f2;
     
     font: 18px/145% system-ui, 'Segoe UI', Roboto, sans-serif;
     letter-spacing: 0.18px;
     color-scheme: light dark;
     color: var(--foreground);
-    background: var(--background);
+    background: var(--white);
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;

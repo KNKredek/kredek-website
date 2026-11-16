@@ -39,8 +39,7 @@ const colorArray: string[] = [
     "#B4674D59", 
     "#FF753859", 
     "#1CAC7859", 
-    "#926EAE59", 
-    "#23232359",
+    "#926EAE59",
     "#FFAACC59", 
     "#C5E38459", 
     "#0D98BA59", 
@@ -165,7 +164,7 @@ const AnimatedBackground = () => {
                     for(let i = 0; i < strokes.length; i++){
                         strokes[i].draw(ctx);
                     }
-                    if(strokes.length < 16 && Math.random() < 0.01){
+                    if(strokes.length < 15 && Math.random() < 0.01){
                         strokes.push(new Stroke(i));
                         i++;
                     }

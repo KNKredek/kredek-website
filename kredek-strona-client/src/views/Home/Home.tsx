@@ -11,7 +11,6 @@ export default function Home() {
             <HeroSection/>
             <MissionSection/>
             <CoursesSection/>
-            <ProjectsSection/>
             <CtaSection/>
         </div>
     )

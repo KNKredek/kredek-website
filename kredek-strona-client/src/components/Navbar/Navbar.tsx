@@ -15,11 +15,11 @@ export default function Navbar() {
                     >
                     Nasze kursy
                 </Link>
-                <Link to="/projekty" 
+                {/* <Link to="/projekty" 
                     className={`nav-link ${location==='/projekty' && 'nav-active-link'}`}
                     >
                     Projekty kursantów
-                </Link>
+                </Link> */}
                 <Link to="/about" 
                     className={`nav-link ${location==='/about' && 'nav-active-link'}`}
                     >
