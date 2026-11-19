@@ -2,17 +2,17 @@ import './home.scss';
 import CoursesSection from './Sections/CoursesSection';
 import CtaSection from './Sections/CtaSection';
 import HeroSection from './Sections/HeroSection';
-import MissionSection from './Sections/MissionSection';
+import AboutSection from './Sections/AboutSection';
 import ProjectsSection from './Sections/ProjectsSection';
 
 export default function Home() {
     return (
         <div className="container">
             <HeroSection/>
-            <MissionSection/>
-            <CoursesSection/>
+            <AboutSection/>
+            {/* <CoursesSection/>
             <ProjectsSection/>
-            <CtaSection/>
+            <CtaSection/> */}
         </div>
     )
 }

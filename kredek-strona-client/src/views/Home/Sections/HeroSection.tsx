@@ -16,20 +16,6 @@ export default function HeroSection() {
             <div className="heroMockup">
                 <img src={MainScreen} alt="C#, .NET" />
             </div>
-
-            <div className="waveContainer">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200" preserveAspectRatio="none" className="waveSvg">
-                    <path 
-                    className="wavePath waveBack" 
-                    d="M0,100 C360,150 360,50 720,100 C1080,150 1080,50 1440,100 L1440,200 L0,200 Z"
-                    />
-                    <path 
-                    className="wavePath waveFront" 
-                    d="M0,100 C360,50 360,150 720,100 C1080,50 1080,150 1440,100 L1440,200 L0,200 Z"
-                    />
-                </svg>
-            </div>
-
         </section>
     )
 }
