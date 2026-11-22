@@ -2,7 +2,7 @@
 import { useEffect, useRef } from "react";
 import "./animatedBackground.scss"
 
-const CANVAS_HEIGHT = 800;
+const CANVAS_HEIGHT = 1000;
 const CANVAS_WIDTH = 6000;
 
 //toCanvasCoordinateX
@@ -156,7 +156,7 @@ const AnimatedBackground = () => {
         if(canvasRef.current && !initialized){
             initialized = true;
             canvasRef.current.width = 6200;
-            canvasRef.current.height = 800;
+            canvasRef.current.height = 1000;
             const ctx = canvasRef.current.getContext("2d");
             let i = 1
             if(ctx){

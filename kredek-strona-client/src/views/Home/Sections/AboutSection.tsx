@@ -1,7 +1,8 @@
 import { Pencil } from "lucide-react"
+import Us from '../../../assets/us.jpg';
 
 const Wave = (down: boolean = false) => (
-    <div className="waveContainer" style={{transform: down ? "translate(0px,0px)rotate(180deg)" : "translate(0px,-120px)rotate(0deg)"}}>
+    <div className="waveContainer" style={{transform: down ? "translate(0px,-1px)rotate(180deg)" : "translate(0px,-119px)rotate(0deg)"}}>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200" preserveAspectRatio="none" className="waveSvg">
             <path 
                 className="wavePath waveBack" 
@@ -19,19 +20,20 @@ export default function AboutSection() {
     return (
         <section className="about">
             {Wave(false)}
-            <div className="about-inner">
-                <img src="" alt="XD" />
-                <div className="about-us">
-                    <div className="about-title">
+            <div className="aboutInner">
+                <div className="aboutImage">
+                    <img src={Us} alt="us image" />
+                </div>
+                <div className="aboutUs">
+                    <div className="aboutTitle">
                         O NAS <Pencil/>
                     </div>
-                    <div className="about-text">
+                    <div className="aboutText">
                         Kredek to koło naukowe zrzeszające studentów Politechniki Wrocławskiej pasjonujących się programowaniem aplikacji webowych i mobilnych. <br/><br/>
                         Zajmujemy się przede wszystkim dzieleniem się naszą wiedzą z innymi przez organizowany kurs programowania.<br/><br/>
                         + do dodania: warsztaty z firmami
                     </div>
                 </div>
-                <div className="circle"/>
             </div>
             {Wave(true)}
         </section>

@@ -6,26 +6,26 @@ export default function Navbar() {
     const location = useLocation().pathname;
     return (
         <nav className='navbar'>
-            <Link to="/" className='nav-logo'>
+            <Link to="/" className='navLogo'>
                 <img height={64} src={Logo} alt="logo"/>
             </Link>
-            <div className="nav-links">
+            <div className="navLinks">
                 <Link to="/kursy" 
-                    className={`nav-link ${location==='/kursy' && 'nav-active-link'}`}
+                    className={`navLink ${location==='/kursy' && 'navActiveLink'}`}
                     >
                     Nasze kursy
                 </Link>
                 <Link to="/projekty" 
-                    className={`nav-link ${location==='/projekty' && 'nav-active-link'}`}
+                    className={`navLink ${location==='/projekty' && 'navActiveLink'}`}
                     >
                     Projekty kursantów
                 </Link>
                 <Link to="/about" 
-                    className={`nav-link ${location==='/about' && 'nav-active-link'}`}
+                    className={`navLink ${location==='/about' && 'navActiveLink'}`}
                     >
                     O nas
                 </Link>
-                <a className='nav-main-link'>Dołącz do nas</a>
+                <a className='navMainLink'>Dołącz do nas</a>
             </div>
         </nav>
     )

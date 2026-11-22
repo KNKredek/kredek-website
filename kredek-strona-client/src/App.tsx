@@ -5,6 +5,7 @@ import CoursantsProjects from './views/CoursantsProjects';
 import AboutUs from './views/AboutUs/AboutUs';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
+import './app.scss';
 
 function App() {
   return (
