@@ -9,18 +9,18 @@
     position: relative;
     width: max-content;
     .crayonButtonText{
+        font-family: var(--title-font);
         background-color: var(--secondary);
         padding: 0px 24px;
         border-top: 12px solid var(--dark-violet);
         border-bottom: 12px solid var(--dark-violet);
         font-size: 24px;
         color: var(--white);
-        outline: 2px solid var(--black);
     }
     svg{
         position: absolute;
         left: 100%;
-        height: calc(100% + 12px);
+        height: calc(100% + 8px);
         width: 56px;
         z-index: 10;
         transform: translate(-8px,0px)rotate(-90deg);

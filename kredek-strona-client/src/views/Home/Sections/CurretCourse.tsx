@@ -41,7 +41,7 @@ export default function CurrentCourse(){
                     </div>
                 </div>
                 <div>Chcesz więcej?</div>
-                <div style={{fontWeight: "bold"}}>Sprawdź archiwum!</div>
+                <a>Sprawdź archiwum!</a>
             </div>
         </div>
     )
