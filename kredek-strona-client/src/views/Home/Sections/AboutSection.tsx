@@ -25,13 +25,13 @@ export default function AboutSection() {
                     <img src={Us} alt="us image" />
                 </div>
                 <div className="aboutUs">
-                    <div className="aboutTitle">
+                    <h2 className="aboutTitle">
                         O NAS <Pencil/>
-                    </div>
+                    </h2>
                     <div className="aboutText">
-                        Kredek to koło naukowe zrzeszające studentów Politechniki Wrocławskiej pasjonujących się programowaniem aplikacji webowych i mobilnych. <br/><br/>
-                        Zajmujemy się przede wszystkim dzieleniem się naszą wiedzą z innymi przez organizowany kurs programowania.<br/><br/>
-                        + do dodania: warsztaty z firmami
+                        <p>Kredek to koło naukowe zrzeszające studentów Politechniki Wrocławskiej pasjonujących się programowaniem aplikacji webowych i mobilnych.</p>
+                        <p>Zajmujemy się przede wszystkim dzieleniem się naszą wiedzą z innymi przez organizowany kurs programowania.</p>
+                        <p>+ do dodania: warsztaty z firmami</p>
                     </div>
                 </div>
             </div>

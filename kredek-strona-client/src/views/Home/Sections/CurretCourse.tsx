@@ -1,22 +1,23 @@
 import { Pen } from "lucide-react"
+import Button from "../../../components/Button/Button"
 
 export default function CurrentCourse(){
     return (
         <div id="currentCourse" className="currentCourse">
             <div className="currentCourseInner">
-                <div className="currentCourseTitle">
+                <h2 className="currentCourseTitle">
                     AKTUALNY KURS
-                </div>
-                <div>
+                </h2>
+                <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                </div>
+                </p>
                 <div className="course">
-                    <div className="courseTitle">
+                    <h2 className="courseTitle">
                         INIT - 2026
-                    </div>
-                    <div className="courseDescription">
+                    </h2>
+                    <p className="courseDescription">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </div>
+                    </p>
                     <div className="tags">
                         {
                             tags.map(tag => (
@@ -24,23 +25,19 @@ export default function CurrentCourse(){
                                     <div className="tagIcon">
                                         {tag.icon}
                                     </div>
-                                    <div className="tagText">
+                                    <p className="tagText">
                                         {tag.title}
-                                    </div>
+                                    </p>
                                 </div>
                             ))
                         }
                     </div>
                     <div className="buttonContainer">
-                        <button className="btnCrayon">
-                            Dowiedz się więcej
-                        </button>
-                        <button className="btnCrayon">
-                            Zapisz się na kurs
-                        </button>
+                        <Button variant={"init"}>Dowiedz się więcej</Button>
+                        <Button variant={"init"}>Zapisz się na kurs</Button>
                     </div>
                 </div>
-                <div>Chcesz więcej?</div>
+                <p>Chcesz więcej?</p>
                 <a>Sprawdź archiwum!</a>
             </div>
         </div>

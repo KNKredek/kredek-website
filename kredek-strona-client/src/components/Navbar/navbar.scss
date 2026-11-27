@@ -1,9 +1,16 @@
+@use "@/styles/variables" as *;
+@use "@/styles/breakpoints" as *;
+
 .navbar {
+    position: fixed;
+    width: calc(100vw - 100px);
     background-color: var(--secondary);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 50px;
+    z-index: 10000;
+    box-shadow: 0px 0px 20px var(--black-op50);
     .navLogo {
         img {
             display: block;
@@ -17,7 +24,7 @@
         .navLink {
             color: white;
             text-decoration: none;
-            font-size: 16px;
+            font-size: $font-size-5;
             font-weight: 500;
             border: 2px solid transparent;
             transition: all 0.3s ease;
@@ -34,7 +41,7 @@
             text-decoration: none;
             padding: 10px 24px;
             border-radius: 25px;
-            font-size: 15px;
+            font-size: $font-size-5;
             font-weight: 600;
             cursor: pointer;
             transition: background-color 0.3s ease, transform 0.2s ease;
@@ -43,5 +50,12 @@
                 transform: translateY(-1px);
             }
         }
+    }
+}
+
+@include breakpoint(mobile_large) {
+    .navbar {
+        width: calc(100vw - 30px);
+        padding: 15px;
     }
 }

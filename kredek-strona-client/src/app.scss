@@ -1,4 +1,20 @@
 @use "@/styles/variables" as *;
+@use "@/styles/breakpoints" as *;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body{
+    font-family: var(--text-font);
+    background-color: var(--white);
+} 
 
 :root {
     letter-spacing: 0.18px;
@@ -9,31 +25,40 @@
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    @media (max-width: 1024px) {
-        font-size: 16px;
-    }
 }
-* {
-    margin: 0;
-    padding: 0;
-}
-a{  
+
+a {  
     all: unset;
     text-decoration: underline;
     font-weight: bold;
     cursor: pointer;
 }
-h2 {
-    font-size: 36px;
-}
-p {
-    font-size: 18px;
-}
-body{
-    font-family: var(--text-font);
-    background-color: var(--white);
+
+h1, .header-1 {
+    font-size: $font-size-1;
+    font-family: var(--title-font);
 }
 
-html {
-    scroll-behavior: smooth;
-}   
+h2, .header-2 {
+    font-size: $font-size-2;
+    font-family: var(--title-font);
+}
+
+h3, .header-3 {
+    font-size: $font-size-3;
+}
+
+p, .paragraph {
+    font-size: $font-size-5;
+}
+
+caption, .caption{
+    font-size: $font-size-6;
+}
+
+
+@include breakpoint(mobile_large) {
+    html {
+        font-size: 10px;
+    }
+}

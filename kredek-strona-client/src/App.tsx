@@ -12,7 +12,6 @@ function App() {
       <BrowserRouter>
         {/* Navbar */}
         <Navbar/>
-        
         {/* Tutaj tworzymy nasze ścieżki. Ten fragment nie jest widoczny na stronie */}
         <Routes>
           <Route path="/" element={<Home />} />
