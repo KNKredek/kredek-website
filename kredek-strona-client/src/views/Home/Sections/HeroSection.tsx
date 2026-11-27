@@ -5,7 +5,7 @@ export default function HeroSection() {
     return (
         <section className="hero">
             <AnimatedBackground/>
-            <div className="heroInner">
+            <div className="hero-inner">
                 <h1 className="title">
                     POKOLORUJ SWOJĄ PRZYSZŁOŚĆ Z <br/>
                     <img height={64} src={Logo} alt="logo"/>

@@ -81,27 +81,27 @@ export default function AboutUs() {
 
   const renderStatIcon = (type: string) => {
     switch (type) {
-      case 'clock': return <Clock className="statIcon" />;
-      case 'users': return <Users className="statIcon" />;
-      case 'cap': return <GraduationCap className="statIcon" />;
-      case 'rocket': return <Rocket className="statIcon" />;
-      default: return <Clock className="statIcon" />;
+      case 'clock': return <Clock className="stat-icon" />;
+      case 'users': return <Users className="stat-icon" />;
+      case 'cap': return <GraduationCap className="stat-icon" />;
+      case 'rocket': return <Rocket className="stat-icon" />;
+      default: return <Clock className="stat-icon" />;
     }
   };
 
   return (
-    <div className="aboutUsPage">
+    <div className="about-us-page">
 
-      <section className="aboutHero">
-        <div className="heroContent">
+      <section className="about-hero">
+        <div className="hero-content">
           <h1>Budujemy przyszłość IT</h1>
           <p>Jesteśmy studenckim kołem naukowym, które od lat łączy pasjonatów programowania, designu i nowoczesnych technologii. Uczymy, inspirujemy i tworzymy projekty, które zmieniają rzeczywistość.</p>
         </div>
 
-        <div className="statsGrid">
+        <div className="stats-grid">
           {mockStats.map(stat => (
-            <div key={stat.id} className="statCard">
-              <div className={`iconWrapper ${stat.iconType}`}>
+            <div key={stat.id} className="stat-card">
+              <div className={`icon-wrapper ${stat.iconType}`}>
                 {renderStatIcon(stat.iconType)}
               </div>
               <h2>{stat.value}</h2>
@@ -111,61 +111,61 @@ export default function AboutUs() {
         </div>
       </section>
 
-      <section className="currentManagement">
-        <div className="sectionTitleBlock">
+      <section className="current-management">
+        <div className="section-title-block">
           <h2>Obecny Zarząd</h2>
-          <div className="decorLine"></div>
+          <div className="decor-line"></div>
         </div>
 
-        <div className="managementGrid">
+        <div className="management-grid">
           {currentBoard.map(member => (
-            <div key={member.id} className="memberCard">
-              <div className="avatarPlaceholder">
+            <div key={member.id} className="member-card">
+              <div className="avatar-placeholder">
                 {/* Obrazek imitujący mikser/sprzęt audio z makiety */}
-                <div className="knobGroup">
+                <div className="knob-group">
                   <span className="knob"></span>
                   <span className="knob"></span>
                 </div>
               </div>
-              <div className="memberInfo">
+              <div className="member-info">
                 <h3>{member.name}</h3>
-                <span className="memberRole">{member.role}</span>
+                <span className="member-role">{member.role}</span>
               </div>
             </div>
           ))}
         </div>
       </section>
 
-      <section className="pastManagement">
-        <div className="sectionTitleBlock">
+      <section className="past-management">
+        <div className="section-title-block">
           <h2>Poprzednie Zarządy</h2>
-          <div className="decorLineLong"></div>
+          <div className="decor-line-long"></div>
         </div>
 
-        <div className="accordionContainer">
+        <div className="accordion-container">
           {pastTermsData.map(term => {
             const isExpanded = expandedTermId === term.id;
             return (
-              <div key={term.id} className={`accordionItem ${isExpanded ? 'active' : ''}`}>
-                <div className="accordionHeader" onClick={() => toggleAccordion(term.id)}>
-                  <div className="headerLeft">
-                    <span className="termBadge">{term.badgeNumber}</span>
+              <div key={term.id} className={`accordion-item ${isExpanded ? 'active' : ''}`}>
+                <div className="accordion-header" onClick={() => toggleAccordion(term.id)}>
+                  <div className="header-left">
+                    <span className="term-badge">{term.badgeNumber}</span>
                     <h3>{term.title}</h3>
                   </div>
-                  <div className="headerRight">
+                  <div className="header-right">
                     {isExpanded ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
                   </div>
                 </div>
                 
                 {isExpanded && (
-                  <div className="accordionContent">
-                    <div className="pastMembersGrid">
+                  <div className="accordion-content">
+                    <div className="past-members-grid">
                       {term.members.map(member => (
-                        <div key={member.id} className="pastMemberRow">
-                          <div className="smallAvatar">
+                        <div key={member.id} className="past-member-row">
+                          <div className="small-avatar">
                             <User size={16} />
                           </div>
-                          <div className="pastMemberMeta">
+                          <div className="past-member-meta">
                             <h4>{member.name}</h4>
                             <span>{member.role}</span>
                           </div>

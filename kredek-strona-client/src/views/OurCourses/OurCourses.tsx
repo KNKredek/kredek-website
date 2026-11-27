@@ -52,10 +52,10 @@ export default function OurCourses() {
 
   const renderProjectIcon = (type: string) => {
     switch (type) {
-      case 'calendar': return <Calendar className="pIcon" />;
-      case 'utensils': return <Utensils className="pIcon" />;
-      case 'handshake': return <Handshake className="pIcon" />;
-      default: return <Code className="pIcon" />;
+      case 'calendar': return <Calendar className="p-icon" />;
+      case 'utensils': return <Utensils className="p-icon" />;
+      case 'handshake': return <Handshake className="p-icon" />;
+      default: return <Code className="p-icon" />;
     }
   };
 
@@ -71,33 +71,33 @@ export default function OurCourses() {
   };
 
   return (
-    <div className="landingPage">
+    <div className="landing-page">
       
 
-      <section className="upcomingCourseSection">
+      <section className="upcoming-course-section">
         <h2>Nadchodzący kurs</h2>
-        <div className="redLine"></div>
-        <div className="upcomingContainer">
-          <div className="upcomingLeft">
-            <span className="countdownBadge">STARTUJE ZA 5 DNI</span>
-            <div className="previewBox">
+        <div className="red-line"></div>
+        <div className="upcoming-container">
+          <div className="upcoming-left">
+            <span className="countdown-badge">STARTUJE ZA 5 DNI</span>
+            <div className="preview-box">
               <Terminal size={48} />
               <h3>C# & .NET</h3>
               <span>Backend Mastery</span>
             </div>
           </div>
-          <div className="upcomingRight">
-            <div className="tagsRow">
-              <span className="badgeGreen">POZIOM: ŚREDNIOZAAWANSOWANY</span>
-              <span className="badgeBlue">8 TYGODNI</span>
-              <span className="badgePurple">CERTYFIKAT</span>
+          <div className="upcoming-right">
+            <div className="tags-row">
+              <span className="badge-green">POZIOM: ŚREDNIOZAAWANSOWANY</span>
+              <span className="badge-blue">8 TYGODNI</span>
+              <span className="badge-purple">CERTYFIKAT</span>
             </div>
             <h2>Tworzenie Skalowalnych Aplikacji w .NET 8</h2>
-            <p className="descriptionText">Kompleksowy kurs backendowy, który przeprowadzi Cię od podstaw architektury REST API, przez Entity Framework Core, aż po zaawansowane wzorce projektowe i mikroserwisy. Nauczysz się pisać czysty, testowalny kod, który jest standardem w branży.</p>
+            <p className="description-text">Kompleksowy kurs backendowy, który przeprowadzi Cię od podstaw architektury REST API, przez Entity Framework Core, aż po zaawansowane wzorce projektowe i mikroserwisy. Nauczysz się pisać czysty, testowalny kod, który jest standardem w branży.</p>
             
-            <div className="techSpecs">
+            <div className="tech-specs">
               <h4>TECHNOLOGIE</h4>
-              <div className="techIcons">
+              <div className="tech-icons">
                 <span>&lt;/&gt; C# 12</span>
                 <span>💾 EF Core</span>
                 <span>☁️ Azure</span>
@@ -106,62 +106,62 @@ export default function OurCourses() {
               </div>
             </div>
 
-            <div className="metaRow">
+            <div className="meta-row">
               <div className="instructors">
                 <h4>PROWADZĄCY</h4>
-                <div className="avatarGroup">
+                <div className="avatar-group">
                   <div className="avatar"></div>
                   <div className="avatar"></div>
                   <div className="avatar"></div>
-                  <div className="avatarPlus">+2</div>
+                  <div className="avatar-plus">+2</div>
                 </div>
               </div>
-              <div className="seatsCount">
+              <div className="seats-count">
                 <h4>LICZBA MIEJSC</h4>
-                <span className="seatsLeft">24 <small>wolne miejsca na 30 dostępnych</small></span>
-                <div className="progressBar"><div className="progressFill"></div></div>
+                <span className="seats-left">24 <small>wolne miejsca na 30 dostępnych</small></span>
+                <div className="progress-bar"><div className="progress-fill"></div></div>
               </div>
             </div>
 
-            <div className="actionRow">
-              <button className="btnApply">Zapisz się na kurs <ArrowRight size={16} /></button>
-              <button className="btnPdf"><Download size={16} /> Sylabus PDF</button>
+            <div className="action-row">
+              <button className="btn-apply">Zapisz się na kurs <ArrowRight size={16} /></button>
+              <button className="btn-pdf"><Download size={16} /> Sylabus PDF</button>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="pastCoursesSection">
-        <div className="pastHeader">
+      <section className="past-courses-section">
+        <div className="past-header">
           <h2>Poprzednie kursy</h2>
-          <div className="tabsFilter">
+          <div className="tabs-filter">
             <button className={activeTab === 'wszystkie' ? 'active' : ''} onClick={() => setActiveTab('wszystkie')}>Wszystkie</button>
             <button className={activeTab === 'frontend' ? 'active' : ''} onClick={() => setActiveTab('frontend')}>Frontend</button>
             <button className={activeTab === 'backend' ? 'active' : ''} onClick={() => setActiveTab('backend')}>Backend</button>
           </div>
         </div>
 
-        <div className="pastGrid">
+        <div className="past-grid">
           {filteredCourses.map(course => (
-            <div key={course.id} className="pastCard">
-              <div className="pastCardTop">
-                <div className="pastIconWrapper">
+            <div key={course.id} className="past-card">
+              <div className="past-card-top">
+                <div className="past-icon-wrapper">
                   {renderCourseIcon(course.iconType)}
                 </div>
                 <div>
                   <h3>{course.title}</h3>
-                  <span className="periodBadge">{course.period}</span>
+                  <span className="period-badge">{course.period}</span>
                 </div>
               </div>
               <p>{course.desc}</p>
-              <div className="pastCardFooter">
+              <div className="past-card-footer">
                 <span>🎓 {course.studentsCount} Studenci</span>
                 <span>👤 {course.instructor}</span>
               </div>
             </div>
           ))}
-          <div className="pastCard archiveCard">
-            <div className="archiveCircle">
+          <div className="past-card archive-card">
+            <div className="archive-circle">
               <ArrowRight size={20} />
             </div>
             <h3>Archiwum</h3>
@@ -170,14 +170,14 @@ export default function OurCourses() {
         </div>
       </section>
 
-      <section className="ctaSection">
+      <section className="cta-section">
         <h2>Gotowy na wyzwanie?</h2>
         <p>Dołącz do ponad 500 studentów, którzy już rozwijają swoje umiejętności z Kredek. Nie wymagamy doświadczenia, tylko chęci do nauki.</p>
-        <div className="ctaFormBlock">
+        <div className="cta-form-block">
           <input type="email" placeholder="Twój e-mail uczelniany" />
           <button>Dołącz teraz</button>
         </div>
-        <span className="disclaimerText">Respektujemy Twoją prywatność. Zero spamu.</span>
+        <span className="disclaimer-text">Respektujemy Twoją prywatność. Zero spamu.</span>
       </section>
     </div>
   );

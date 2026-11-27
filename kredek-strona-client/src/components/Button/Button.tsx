@@ -15,7 +15,7 @@ export default function Button({className, children, variant, link, onClick, ...
     if(link){
         return (
             <a className={`button ${className} variant-${variant}`} href={link}>
-                <div className="buttonText">
+                <div className="button-text">
                     {children}
                 </div>
                 {hasCrayonHead()}
@@ -25,7 +25,7 @@ export default function Button({className, children, variant, link, onClick, ...
 
     return(
         <button className={`button ${className} variant-${variant}`} onClick={onClick} {...rest}>
-            <div className="buttonText">
+            <div className="button-text">
                 {children}
             </div>
             {hasCrayonHead()}

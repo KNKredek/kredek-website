@@ -205,8 +205,8 @@ const AnimatedBackground = () => {
         initializeCanvas();
     },[])
     return (
-        <div className="animatedBackgroundContainer">
-            <canvas ref={canvasRef} className="animatedBackground"/>
+        <div className="animated-background-container">
+            <canvas ref={canvasRef} className="animated-background"/>
         </div>
     )
 }

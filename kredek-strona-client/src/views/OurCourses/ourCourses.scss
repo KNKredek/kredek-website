@@ -11,14 +11,14 @@ $max-layout-width: 1260px;
 input {
     background-color: white;
 }
-.landingPage {
+.landing-page {
   font-family: 'Inter', sans-serif;
   color: $text-dark;
   background-color: $white;
   overflow-x: hidden;
 }
 
-.mainHeader {
+.main-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,14 +26,14 @@ input {
   background-color: $secondary-bg;
   color: $white;
 
-  .logoBlock {
+  .logo-block {
     font-size: 24px;
     font-weight: bold;
     display: flex;
     align-items: center;
     gap: 8px;
 
-    .badgeK {
+    .badge-k {
       background-color: $primary-color;
       padding: 2px 10px;
       border-radius: 6px;
@@ -53,7 +53,7 @@ input {
       &:hover { color: $white; }
     }
 
-    .btnJoin {
+    .btn-join {
       background-color: $primary-color;
       color: $white;
       border: none;
@@ -65,13 +65,13 @@ input {
   }
 }
 
-.heroSection {
+.hero-section {
   background: linear-gradient(180deg, $secondary-bg 0%, $gradient-end 100%);
   color: $white;
   padding: 60px 80px 180px 80px;
   position: relative;
 
-  .heroLayout {
+  .hero-layout {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -80,10 +80,10 @@ input {
     width: 100%;
   }
 
-  .heroLeft {
+  .hero-left {
     max-width: 550px;
 
-    .topBadge {
+    .top-badge {
       background-color: rgba($primary-color, 0.15);
       color: #ff8787;
       padding: 6px 16px;
@@ -98,7 +98,7 @@ input {
       margin: 20px 0;
       line-height: 1.2;
 
-      .textAccent {
+      .text-accent {
         background-color: rgba($primary-color, 0.2);
         padding: 0 5px;
         border-bottom: 3px solid $primary-color;
@@ -112,11 +112,11 @@ input {
       margin-bottom: 30px;
     }
 
-    .heroActions {
+    .hero-actions {
       display: flex;
       gap: 15px;
 
-      .btnActionRed {
+      .btn-action-red {
         background-color: $primary-color;
         color: $white;
         border: none;
@@ -126,7 +126,7 @@ input {
         cursor: pointer;
       }
 
-      .btnActionOutline {
+      .btn-action-outline {
         background-color: rgba($white, 0.1);
         color: $white;
         border: 1px solid rgba($white, 0.2);
@@ -139,8 +139,8 @@ input {
     }
   }
 
-  .heroRight {
-    .ideMockup {
+  .hero-right {
+    .ide-mockup {
       width: 500px;
       height: 300px;
       background-color: #2b2d42;
@@ -149,7 +149,7 @@ input {
       box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
       position: relative;
 
-      .ideBar {
+      .ide-bar {
         position: absolute;
         top: 40%;
         left: 10%;
@@ -163,7 +163,7 @@ input {
     }
   }
 
-  .waveWrapper {
+  .wave-wrapper {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -172,15 +172,15 @@ input {
     overflow: hidden;
     line-height: 0;
 
-    .waveSvg {
+    .wave-svg {
       width: 200%;
       height: 100%;
       display: block;
     }
 
-    .waveElement { fill: $white; }
-    .waveBack { opacity: 0.3; animation: loopBack 15s linear infinite; }
-    .waveFront { opacity: 1; animation: loopFront 10s linear infinite; }
+    .wave-element { fill: $white; }
+    .wave-back { opacity: 0.3; animation: loopBack 15s linear infinite; }
+    .wave-front { opacity: 1; animation: loopFront 10s linear infinite; }
   }
 }
 
@@ -193,22 +193,22 @@ input {
   100% { transform: translateX(0); }
 }
 
-.missionSection {
+.mission-section {
   padding: 80px 80px;
   text-align: center;
 
   h2 { font-size: 32px; margin-bottom: 10px; }
-  .redLine { width: 60px; height: 3px; background-color: $primary-color; margin: 0 auto 30px; }
-  .missionBrief { max-width: 700px; margin: 0 auto 50px; color: $text-muted; line-height: 1.6; }
+  .red-line { width: 60px; height: 3px; background-color: $primary-color; margin: 0 auto 30px; }
+  .mission-brief { max-width: 700px; margin: 0 auto 50px; color: $text-muted; line-height: 1.6; }
 
-  .gridMission {
+  .grid-mission {
     display: flex;
     justify-content: center;
     gap: 30px;
     max-width: $max-layout-width;
     margin: 0 auto;
 
-    .missionCard {
+    .mission-card {
       background: $white;
       padding: 40px 30px;
       border-radius: 12px;
@@ -217,7 +217,7 @@ input {
       text-align: left;
       border: 1px solid #f1f3f5;
 
-      .iconContainer {
+      .icon-container {
         width: 50px;
         height: 50px;
         display: flex;
@@ -227,9 +227,9 @@ input {
         margin-bottom: 20px;
         color: $primary-color;
       }
-      .redBg { background-color: #fff5f5; }
-      .orangeBg { background-color: #fffaf0; color: #dd6b20; }
-      .purpleBg { background-color: #faf5ff; color: #805ad5; }
+      .red-bg { background-color: #fff5f5; }
+      .orange-bg { background-color: #fffaf0; color: #dd6b20; }
+      .purple-bg { background-color: #faf5ff; color: #805ad5; }
 
       h3 { margin-bottom: 15px; font-size: 18px; }
       p { color: $text-muted; font-size: 14px; line-height: 1.5; }
@@ -237,32 +237,32 @@ input {
   }
 }
 
-.featuredCourses {
+.featured-courses {
   background-color: $light-bg;
   padding: 80px 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  .sectionHeader {
+  .section-header {
     width: 100%;
     max-width: $max-layout-width;
     display: flex;
     justify-content: space-between;
     align-items: center;
     h2 { font-size: 32px; margin: 0; }
-    .moreLink { color: $primary-color; text-decoration: none; font-weight: bold; }
+    .more-link { color: $primary-color; text-decoration: none; font-weight: bold; }
   }
 
-  .subTitle { width: 100%; max-width: $max-layout-width; color: $text-muted; margin: 10px 0 40px; }
+  .sub-title { width: 100%; max-width: $max-layout-width; color: $text-muted; margin: 10px 0 40px; }
 
-  .coursesGrid {
+  .courses-grid {
     display: flex;
     gap: 30px;
     width: 100%;
     max-width: $max-layout-width;
 
-    .courseCard {
+    .course-card {
       background-color: $white;
       border-radius: 24px;
       overflow: hidden;
@@ -270,7 +270,7 @@ input {
       flex: 1;
       max-width: 400px;
 
-      .cardHeader {
+      .card-header {
         padding: 40px 30px;
         color: $white;
         position: relative;
@@ -279,7 +279,7 @@ input {
         gap: 15px;
         h4 { font-size: 16px; margin: 0; font-weight: 500; }
 
-        .tagPopular, .tagNew {
+        .tag-popular, .tag-new {
           position: absolute;
           top: 15px;
           right: 15px;
@@ -288,20 +288,20 @@ input {
           padding: 2px 8px;
           border-radius: 8px;
         }
-        .tagPopular { background-color: $primary-color; }
-        .tagNew { background-color: #20c997; }
+        .tag-popular { background-color: $primary-color; }
+        .tag-new { background-color: #20c997; }
       }
 
-      .headerCsharp { background-color: #2b1c54; }
-      .headerFrontend { background-color: #384259; }
-      .headerData { background-color: #162c5b; }
+      .header-csharp { background-color: #2b1c54; }
+      .header-frontend { background-color: #384259; }
+      .header-data { background-color: #162c5b; }
 
-      .cardBody {
+      .card-body {
         padding: 30px;
         h3 { font-size: 20px; margin-bottom: 15px; }
         p { color: $text-muted; font-size: 14px; line-height: 1.6; height: 70px; }
 
-        .metaInfo {
+        .meta-info {
           display: flex;
           justify-content: space-between;
           border-top: 1px solid $border-color;
@@ -315,16 +315,16 @@ input {
   }
 }
 
-.upcomingCourseSection {
+.upcoming-course-section {
   padding: 80px 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   h2 { font-size: 32px; margin-bottom: 10px; }
-  .redLine { width: 60px; height: 3px; background-color: $primary-color; margin-bottom: 40px; }
+  .red-line { width: 60px; height: 3px; background-color: $primary-color; margin-bottom: 40px; }
 
-  .upcomingContainer {
+  .upcoming-container {
     display: flex;
     width: 100%;
     max-width: $max-layout-width;
@@ -334,7 +334,7 @@ input {
     overflow: hidden;
   }
 
-  .upcomingLeft {
+  .upcoming-left {
     flex: 1;
     background: radial-gradient(circle, #2d1b60 0%, $secondary-bg 100%);
     position: relative;
@@ -343,7 +343,7 @@ input {
     justify-content: center;
     padding: 60px;
 
-    .countdownBadge {
+    .countdown-badge {
       position: absolute;
       top: 25px;
       right: 25px;
@@ -355,7 +355,7 @@ input {
       color: $white;
     }
 
-    .previewBox {
+    .preview-box {
       background: rgba($white, 0.05);
       border: 1px solid rgba($white, 0.1);
       border-radius: 16px;
@@ -368,29 +368,29 @@ input {
     }
   }
 
-  .upcomingRight {
+  .upcoming-right {
     flex: 2;
     padding: 50px;
 
-    .tagsRow {
+    .tags-row {
       display: flex;
       gap: 10px;
       margin-bottom: 20px;
       font-size: 11px;
       font-weight: bold;
       span { padding: 4px 10px; border-radius: 6px; }
-      .badgeGreen { background-color: #ebfbee; color: #2b8a3e; }
-      .badgeBlue { background-color: #e7f5ff; color: #1c7ed6; }
-      .badgePurple { background-color: #f3f0ff; color: #7048e8; }
+      .badge-green { background-color: #ebfbee; color: #2b8a3e; }
+      .badge-blue { background-color: #e7f5ff; color: #1c7ed6; }
+      .badge-purple { background-color: #f3f0ff; color: #7048e8; }
     }
 
     h2 { font-size: 28px; text-align: left; margin-bottom: 20px; }
-    .descriptionText { color: $text-muted; line-height: 1.7; margin-bottom: 30px; font-size: 15px; }
+    .description-text { color: $text-muted; line-height: 1.7; margin-bottom: 30px; font-size: 15px; }
 
-    .techSpecs {
+    .tech-specs {
       margin-bottom: 30px;
       h4 { font-size: 12px; color: $text-muted; margin-bottom: 12px; letter-spacing: 0.5px; }
-      .techIcons {
+      .tech-icons {
         display: flex;
         gap: 20px;
         font-size: 14px;
@@ -399,45 +399,45 @@ input {
       }
     }
 
-    .metaRow {
+    .meta-row {
       display: flex;
       gap: 50px;
       margin-bottom: 40px;
       h4 { font-size: 12px; color: $text-muted; margin-bottom: 12px; }
 
-      .avatarGroup {
+      .avatar-group {
         display: flex;
         align-items: center;
         .avatar { width: 36px; height: 36px; background-color: #dee2e6; border: 2px solid $white; border-radius: 50%; margin-right: -10px; }
-        .avatarPlus { font-size: 12px; font-weight: bold; color: $text-muted; margin-left: 15px; }
+        .avatar-plus { font-size: 12px; font-weight: bold; color: $text-muted; margin-left: 15px; }
       }
 
-      .seatsCount {
+      .seats-count {
         flex: 1;
-        .seatsLeft { font-size: 20px; font-weight: bold; color: #e03131; display: block; small { font-size: 13px; color: $text-muted; font-weight: normal; } }
-        .progressBar { width: 100%; height: 6px; background-color: #f1f3f5; border-radius: 3px; margin-top: 8px; overflow: hidden;
-          .progressFill { width: 80%; height: 100%; background-color: #e03131; }
+        .seats-left { font-size: 20px; font-weight: bold; color: #e03131; display: block; small { font-size: 13px; color: $text-muted; font-weight: normal; } }
+        .progress-bar { width: 100%; height: 6px; background-color: #f1f3f5; border-radius: 3px; margin-top: 8px; overflow: hidden;
+          .progress-fill { width: 80%; height: 100%; background-color: #e03131; }
         }
       }
     }
 
-    .actionRow {
+    .action-row {
       display: flex;
       gap: 15px;
-      .btnApply { background-color: $secondary-bg; color: $white; border: none; padding: 14px 28px; border-radius: 8px; font-weight: bold; display: flex; align-items: center; gap: 8px; cursor: pointer; }
-      .btnPdf { background-color: $white; color: $text-dark; border: 1px solid #ced4da; padding: 14px 28px; border-radius: 8px; font-weight: bold; display: flex; align-items: center; gap: 8px; cursor: pointer; }
+      .btn-apply { background-color: $secondary-bg; color: $white; border: none; padding: 14px 28px; border-radius: 8px; font-weight: bold; display: flex; align-items: center; gap: 8px; cursor: pointer; }
+      .btn-pdf { background-color: $white; color: $text-dark; border: 1px solid #ced4da; padding: 14px 28px; border-radius: 8px; font-weight: bold; display: flex; align-items: center; gap: 8px; cursor: pointer; }
     }
   }
 }
 
-.pastCoursesSection {
+.past-courses-section {
   background-color: $light-bg;
   padding: 80px 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  .pastHeader {
+  .past-header {
     width: 100%;
     max-width: $max-layout-width;
     display: flex;
@@ -446,7 +446,7 @@ input {
     margin-bottom: 40px;
     h2 { font-size: 32px; margin: 0; }
 
-    .tabsFilter {
+    .tabs-filter {
       display: flex;
       background-color: #e9ecef;
       padding: 4px;
@@ -458,14 +458,14 @@ input {
     }
   }
 
-  .pastGrid {
+  .past-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     width: 100%;
     max-width: $max-layout-width;
 
-    .pastCard {
+    .past-card {
       background: $white;
       padding: 30px;
       border-radius: 16px;
@@ -474,19 +474,19 @@ input {
       flex-direction: column;
       justify-content: space-between;
 
-      .pastCardTop {
+      .past-card-top {
         display: flex;
         gap: 15px;
         align-items: center;
         margin-bottom: 15px;
-        .pastIconWrapper { width: 40px; height: 40px; background-color: #e7f5ff; color: #1c7ed6; display: flex; align-items: center; justify-content: center; border-radius: 8px; }
+        .past-icon-wrapper { width: 40px; height: 40px; background-color: #e7f5ff; color: #1c7ed6; display: flex; align-items: center; justify-content: center; border-radius: 8px; }
         h3 { font-size: 18px; margin: 0; }
-        .periodBadge { font-size: 11px; color: $text-muted; }
+        .period-badge { font-size: 11px; color: $text-muted; }
       }
 
       p { color: $text-muted; font-size: 14px; line-height: 1.6; margin-bottom: 20px; }
 
-      .pastCardFooter {
+      .past-card-footer {
         display: flex;
         justify-content: space-between;
         font-size: 12px;
@@ -496,7 +496,7 @@ input {
       }
     }
 
-    .archiveCard {
+    .archive-card {
       align-items: center;
       justify-content: center;
       text-align: center;
@@ -504,20 +504,20 @@ input {
       background: transparent;
       cursor: pointer;
 
-      .archiveCircle { width: 48px; height: 48px; background-color: $white; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.05); margin-bottom: 15px; color: $text-muted; }
+      .archive-circle { width: 48px; height: 48px; background-color: $white; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.05); margin-bottom: 15px; color: $text-muted; }
       h3 { font-size: 18px; margin-bottom: 5px; }
     }
   }
 }
 
-.projectsSection {
+.projects-section {
   padding: 100px 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
   h2 { font-size: 32px; margin-bottom: 40px; }
 
-  .projectsContainer {
+  .projects-container {
     display: flex;
     gap: 50px;
     width: 100%;
@@ -525,13 +525,13 @@ input {
     align-items: center;
   }
 
-  .projectsImageSide { flex: 1;
-    .laptopView { width: 100%; height: 350px; background-color: #1e1e1e; border-radius: 16px; border: 12px solid #333; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15); }
+  .projects-image-side { flex: 1;
+    .laptop-view { width: 100%; height: 350px; background-color: #1e1e1e; border-radius: 16px; border: 12px solid #333; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15); }
   }
 
-  .projectsListSide { flex: 1; display: flex; flex-direction: column; gap: 20px; }
+  .projects-list-side { flex: 1; display: flex; flex-direction: column; gap: 20px; }
 
-  .projectItem {
+  .project-item {
     display: flex;
     gap: 20px;
     padding: 20px;
@@ -540,27 +540,27 @@ input {
     cursor: pointer;
     transition: all 0.3s ease;
 
-    &Active {
+    &-active {
       background-color: $white;
       box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
       border-left: 4px solid $primary-color;
     }
 
-    .pIconContainer { width: 50px; height: 50px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: $text-dark;
+    .p-icon-container { width: 50px; height: 50px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: $text-dark;
       &.calendar { background-color: #e7f5ff; color: #1c7ed6; }
       &.utensils { background-color: #fff5f5; color: $primary-color; }
       &.handshake { background-color: #ebfbee; color: #2b8a3e; }
     }
 
-    .pText {
+    .p-text {
       h3 { margin: 0 0 5px; font-size: 18px; }
-      .authorTag { font-size: 12px; color: $text-muted; display: block; margin-bottom: 8px; }
+      .author-tag { font-size: 12px; color: $text-muted; display: block; margin-bottom: 8px; }
       p { margin: 0; color: $text-muted; font-size: 14px; line-height: 1.5; }
     }
   }
 }
 
-.ctaSection {
+.cta-section {
   background-color: $secondary-bg;
   color: $white;
   padding: 80px 80px;
@@ -572,7 +572,7 @@ input {
   h2 { font-size: 36px; margin-bottom: 20px; }
   p { max-width: 600px; color: #ced4da; margin-bottom: 40px; line-height: 1.6; }
 
-  .ctaFormBlock {
+  .cta-form-block {
     display: flex;
     gap: 15px;
     width: 100%;
@@ -581,16 +581,16 @@ input {
     input { flex: 1; padding: 16px 20px; border-radius: 8px; border: none; font-size: 14px; }
     button { background-color: $primary-color; color: $white; border: none; padding: 16px 32px; border-radius: 8px; font-weight: bold; cursor: pointer; }
   }
-  .disclaimerText { font-size: 12px; color: #868e96; }
+  .disclaimer-text { font-size: 12px; color: #868e96; }
 }
 
-.mainFooter {
+.main-footer {
   background-color: $dark-footer;
   color: #9c92ac;
   padding: 80px 80px 30px;
   font-size: 14px;
 
-  .footerTopRow {
+  .footer-top-row {
     display: flex;
     justify-content: space-between;
     max-width: $max-layout-width;
@@ -598,15 +598,15 @@ input {
     width: 100%;
   }
 
-  .footerBrandBlock {
+  .footer-brand-block {
     max-width: 300px;
-    .logoBlock { color: $white; margin-bottom: 20px; font-size: 24px; font-weight: bold; display: flex; align-items: center; gap: 8px;
-      .badgeK { background-color: $primary-color; padding: 2px 10px; border-radius: 6px; color: $white; }
+    .logo-block { color: $white; margin-bottom: 20px; font-size: 24px; font-weight: bold; display: flex; align-items: center; gap: 8px;
+      .badge-k { background-color: $primary-color; padding: 2px 10px; border-radius: 6px; color: $white; }
     }
     p { line-height: 1.6; }
   }
 
-  .footerLinksColumn {
+  .footer-links-column {
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -615,7 +615,7 @@ input {
     span { display: block; }
   }
 
-  .footerBottomRow {
+  .footer-bottom-row {
     border-top: 1px solid rgba($white, 0.05);
     padding-top: 30px;
     text-align: center;

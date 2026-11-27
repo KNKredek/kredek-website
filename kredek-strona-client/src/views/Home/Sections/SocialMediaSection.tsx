@@ -1,7 +1,7 @@
 export default function SocialMediaSection(){
     return(
-        <div className="socialMediaSection">
-            <div className="socialMediaSectionInner">
+        <div className="social-media-section">
+            <div className="social-media-section-inner">
                 <h2>AKTUALNOŚCI</h2>
                 <p>Co u nas nowego?</p>
                 <div className="posts">

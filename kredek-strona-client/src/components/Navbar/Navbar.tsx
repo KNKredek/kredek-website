@@ -6,21 +6,21 @@ export default function Navbar() {
     const location = useLocation().pathname;
     return (
         <nav className='navbar'>
-            <Link to="/" className='navLogo'>
+            <Link to="/" className='nav-logo'>
                 <img height={64} src={Logo} alt="logo"/>
             </Link>
-            <div className="navLinks">
+            <div className="nav-links">
                 <Link to="/kursy" 
-                    className={`navLink ${location==='/kursy' && 'navActiveLink'}`}
+                    className={`nav-link ${location==='/kursy' && 'nav-active-link'}`}
                     >
                     Nasze kursy
                 </Link>
                 <Link to="/about" 
-                    className={`navLink ${location==='/about' && 'navActiveLink'}`}
+                    className={`nav-link ${location==='/about' && 'nav-active-link'}`}
                     >
                     O nas
                 </Link>
-                <a className='navMainLink'>Dołącz do nas</a>
+                <a className='nav-main-link'>Dołącz do nas</a>
             </div>
         </nav>
     )

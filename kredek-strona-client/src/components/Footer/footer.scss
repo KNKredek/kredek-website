@@ -5,53 +5,53 @@
   font-size: 14px;
 }
 
-.footerTop {
+.footer-top {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 60px;
 }
 
-.footerBrand {
+.footer-brand {
   max-width: 300px;
 }
 
-.footerBrand .logo {
+.footer-brand .logo {
   color: #ffffff;
   margin-bottom: 20px;
 }
 
-.footerBrand p {
+.footer-brand p {
   line-height: 1.6;
 }
 
-.footerLinks {
+.footer-links {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-.footerLinks h4 {
+.footer-links h4 {
   color: #ffffff;
   font-size: 14px;
   margin-bottom: 10px;
   letter-spacing: 1px;
 }
 
-.footerLinks a {
+.footer-links a {
   color: #9c92ac;
   text-decoration: none;
 }
 
-.footerLinks a:hover {
+.footer-links a:hover {
   color: #ffffff;
 }
 
-.footerLinks span {
+.footer-links span {
   display: block;
 }
 
-.footerBottom {
+.footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.05);
   padding-top: 30px;
   text-align: center;

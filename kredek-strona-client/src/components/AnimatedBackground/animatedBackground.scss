@@ -1,4 +1,4 @@
-.animatedBackgroundContainer{
+.animated-background-container{
     position: absolute;
     background-color: white;
     z-index: 0;
@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     width: 100vw;
-    .animatedBackground{
+    .animated-background{
         width: 10000px;
         height: 1000px;
     }
