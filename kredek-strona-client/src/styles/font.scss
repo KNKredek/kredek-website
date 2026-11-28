@@ -1,6 +1,11 @@
 @font-face {
     font-family: 'Futura';
     src: url('../styles/fonts/Futura-bold.woff2') format('woff2');
+    // Font ma asymetryczne metryki (ascent 802, descent 197, capHeight 754 na 1000 UPM),
+    // przez co pod tekstem zostaje ~4px pustej przestrzeni. Wyrównujemy pole tekstu do wersalików.
+    ascent-override: 87.5%;
+    descent-override: 12.5%;
+    line-gap-override: 0%;
 }
 
 @font-face {

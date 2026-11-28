@@ -1,6 +1,6 @@
 
 import { useEffect, useRef } from "react";
-import "./animatedBackground.scss"
+import "./animated-background.scss"
 
 const CANVAS_HEIGHT = 1000;
 const CANVAS_WIDTH = 10000;

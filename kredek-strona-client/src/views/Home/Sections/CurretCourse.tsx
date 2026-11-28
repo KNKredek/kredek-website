@@ -3,7 +3,7 @@ import Button from "../../../components/Button/Button"
 
 export default function CurrentCourse(){
     return (
-        <div id="currentCourse" className="current-course">
+        <div id="currentCourse" className="section current-course">
             <div className="current-course-inner">
                 <h2 className="current-course-title">
                     AKTUALNY KURS

@@ -59,6 +59,12 @@ caption, .caption{
 
 @include breakpoint(mobile_large) {
     html {
-        font-size: 10px;
+        font-size: 13px;
+    }
+}
+
+@include breakpoint(mobile_medium) {
+    html {
+        font-size: 9px;
     }
 }

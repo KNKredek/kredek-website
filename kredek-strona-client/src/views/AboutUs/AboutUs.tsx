@@ -3,7 +3,7 @@ import {
   Clock, Users, GraduationCap, Rocket, ChevronDown, ChevronUp, 
   User
 } from 'lucide-react';
-import './aboutUs.scss';
+import './about-us.scss';
 
 interface StatCard {
   id: number;

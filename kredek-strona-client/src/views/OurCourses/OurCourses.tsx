@@ -4,7 +4,7 @@ import {
   Calendar, Utensils, Handshake, Download, ArrowRight, 
   Globe, Server, Cpu
 } from 'lucide-react';
-import './ourCourses.scss';
+import './our-courses.scss';
 
 interface Project {
   id: number;

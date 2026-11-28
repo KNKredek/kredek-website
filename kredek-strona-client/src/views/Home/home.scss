@@ -1,4 +1,6 @@
 @use "@/styles/breakpoints" as *;
+
+
 // MAIN SECTION
 
 .hero {
@@ -77,9 +79,8 @@
         align-items: center;
         font-weight: bold;
         svg{
-          width: 32px;
-          height: 32px;
-          transform: translate(0px,-4px);
+          width: 2rem;
+          height: 2rem;
           stroke: var(--primary);
         }
       }
@@ -199,12 +200,12 @@
 
 // SOCIAL MEDIA
 
-.social-media-section{
+.social-media{
   background-color: var(--white);
-  padding: 120px 40px 60px 40px;
+  padding: 60px 40px 60px 40px;
   display: flex;
   justify-content: center;
-  .social-media-section-inner{
+  .social-media-inner{
     width: 1080px;
     iframe{
       border: unset;
@@ -291,9 +292,27 @@
   }
 }
 
+@keyframes waveScrollLoop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes waveScrollLoopReverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 @include breakpoint(laptop){
-  .social-media-section{
-    .social-media-section-inner{
+  .social-media{
+    .social-media-inner{
       iframe{
         width: 504px;
       }
@@ -328,18 +347,62 @@
         }
         .tags{
           grid-template-columns: auto;
+          margin-top: 16px;
+          gap: 8px;
+          .tag{
+            .tag-icon{
+              width: 16px;
+              height: 16px;
+            }
+          }
         }
       }
     }
   }
-  
-  .social-media-section{
-    .social-media-section-inner{
+  .social-media{
+    .social-media-inner{
       iframe{
         width: calc(100vw - 80px);
       }
       .posts{
         flex-direction: column;
+      }
+    }
+  }
+}
+
+@include breakpoint(mobile_medium) {
+  .about {
+    .about-inner{
+      padding: 16px 20px;
+    }
+  }
+  .current-course{
+    padding: 120px 20px 60px 20px;
+    .current-course-inner{
+      .course{
+        .course-title{
+          margin-bottom: 16px;
+        }
+        padding: 24px;
+        .button-container{
+          margin-top: 32px;
+          width: 100%;
+          flex-direction: column;
+          gap: 32px;
+          button:nth-child(2){
+            float: left;
+          }
+        }
+      }
+    }
+  }
+
+  .social-media{
+    padding: 60px 20px 60px 20px;
+    .social-media-inner{
+      iframe{
+        width: calc(100vw - 40px);
       }
     }
   }

@@ -18,7 +18,7 @@ const Wave = (down: boolean = false) => (
 
 export default function AboutSection() {
     return (
-        <section className="about">
+        <section className="section about">
             {Wave(false)}
             <div className="about-inner">
                 <div className="about-image">
